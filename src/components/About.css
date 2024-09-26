@@ -1,0 +1,56 @@
+/* General adjustments for better carousel layout */
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 500px; /* Adjust this if you want different heights */
+  max-width: 100%;
+  overflow: hidden; /* Ensure no overflow */
+}
+
+.slick-slide img {
+  max-width: 100%; /* To prevent it from going beyond container */
+  height: auto;
+  object-fit: cover; /* Ensures the images scale properly without stretching */
+}
+
+/* Carousel container adjustments */
+#project .slick-slider {
+  width: 80%; /* You can change this to control the width of the carousel */
+  margin: 0 auto; /* Center the carousel */
+  position: relative;
+  z-index: 2; /* Ensure it's above the bubble background */
+}
+
+#about, #skill, #resume, #social{
+  z-index: 2;
+  position: relative;
+}
+
+.carousel img{
+  width: 100%;
+  height: auto;
+}
+
+.bubble-container {
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bubble {
+  position: fixed;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  opacity: 0.8;
+  animation: bubble-animation 7s infinite linear;
+  bottom: -50px; /* To ensure they start from the bottom */
+}
+
+@keyframes bubble-animation {
+  0% {
+    transform: translateY(100vh) scale(0.5);
+  }
+  100% {
+    transform: translateY(-100vh) scale(1.2);
+  }
+}
