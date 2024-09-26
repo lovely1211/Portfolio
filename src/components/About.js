@@ -320,7 +320,7 @@ const Portfolio = () => {
           <div>
             <h2 className='text-4xl font-bold my-8'>Resume</h2>
             <div className='w-full '>
-              <embed src="/Lovely_Singh.pdf" type="application/pdf" width="100%" height="460px" />
+              <embed src="https://lovely1211.github.io/Portfolio/Lovely_Singh.pdf" type="application/pdf" width="100%" height="460px" />
             </div>
           </div>
         </section>
