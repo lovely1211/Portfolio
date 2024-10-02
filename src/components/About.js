@@ -35,7 +35,7 @@ import Landing from '../assets/lan.png';
 import Dashboard from '../assets/db.png';
 import LinkedinClone from '../assets/linkedin.png';
 import Amazon from '../assets/Amazon Clone.png';
-import Collab from '../assets/Collab.mp4';
+import InnerGlow from '../assets/InnerGlow.png';
 import YouTube from '../assets/YT.png';
 import Topper from '../assets/top.png';
 import Exp from '../assets/Exp.png';
@@ -156,15 +156,14 @@ const Portfolio = () => {
             <div className="carousel-container w-4/5"> 
             <Slider {...sliderSettings}>
 
-            <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/Collaborify', '_blank')}>
-                <video 
-                  className="w-full cursor-pointer" 
-                  src={Collab}  
-                  alt="Project 0"
-                  controls    
-                  muted    
-                />
-            </div>
+            <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/InnerGlow', '_blank')}>
+                <img className="carousel-img cursor-pointer" src={InnerGlow} alt="Project 2" />
+
+                <div className="absolute bottom-0 w-full bg-red-950 bg-opacity-50 text-yellow-500 font-bold text-center p-3">
+                  <p className="text-lg">InnerGlow is a mental health and wellness platform designed to help individuals achieve inner peace and emotional balance.</p>
+                  <a href="https://github.com/lovely1211/InnerGlow"           className="underline hover:no-underline text-sm">GitHub</a>
+                </div>
+              </div>
 
             <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/GoodFood', '_blank')}>
                 <video 
@@ -197,6 +196,15 @@ const Portfolio = () => {
 
               <div onClick={() => window.open('https://github.com/My-Chat-App', '_blank')}>
                 <img className="carousel-img cursor-pointer" src={Chat2} alt="Project 2" />
+
+                <div className="absolute bottom-0 w-full bg-red-950 bg-opacity-50 text-yellow-500 font-bold text-center p-3">
+                  <p className="text-lg">Project Report</p>
+                  <a href="/Project_Report.pdf" 
+                  className="underline hover:no-underline text-sm"
+                  target="_blank" 
+                  rel="noopener noreferrer">
+                  Click here\</a>
+                </div>
               </div>
 
               <div onClick={() => window.open('https://github.com/My-Chat-App', '_blank')}>
