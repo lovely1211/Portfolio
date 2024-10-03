@@ -194,8 +194,8 @@ const Portfolio = () => {
                 </div>
               </div>
 
-              <div className='relative inline-block' onClick={() => window.open('https://github.com/My-Chat-App', '_blank')}>
-                <img className="carousel-img cursor-pointer" src={Chat2} alt="Project 2" />
+              <div className='relative inline-block'>
+                <img className="carousel-img" src={Chat2} alt="Project 2" />
                 <div className="absolute bottom-0 w-full bg-red-950 bg-opacity-50 text-yellow-500 font-bold text-center p-3">
                   <a href="https://lovely1211.github.io/Portfolio/Project_Report.pdf" className="underline hover:no-underline text-md">Project Report</a>
                 </div>
