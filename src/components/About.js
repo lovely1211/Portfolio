@@ -126,11 +126,12 @@ const Portfolio = () => {
             <div className='h-1/2 w-1/2'>
               <h1 className='text-5xl font-bold'>Hello, I'm <span className=' text-red-600'>Lovely Singh</span></h1>
               <h2 className='text-4xl font-bold'>Full Stack Developer</h2>
-              <p>I'm a passionate software engineer currently working on an exciting project called Collaborify.</p>
+              <p>I'm a passionate software engineer currently developing an exciting project called Inner Glow.</p>
               <p>
-              With hands-on experience through internships, I bring a strong drive for excellence in full-stack and MERN-stack development. I was honored with 1st place in my college and awarded a scholarship for outstanding performance. I excel at designing and developing web applications using modern development technologies and have a deep understanding of databases, programming languages, and APIs. I'm always excited to tackle new technical challenges and deliver effective solutions.
+              I was awarded a scholarship for securing 1st place in my college and recognized as a top performer during my two-month internship, where I developed high-impact projects. I excel in designing and building scalable web applications using modern technologies, with a strong understanding of databases, programming languages, and APIs.
               </p>
-              <p>Connect me :- lovely1211zmn@gmail.com</p>
+              <p>I thrive on solving complex technical challenges and delivering efficient solutions, always eager to learn and take on new challenges.</p>
+              <p>Connect with me:  lovely1211zmn@gmail.com</p>
             </div>
           </div>
         </section>
