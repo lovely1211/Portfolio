@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './About.css';
 // images
-import Me from '../assets/me2.png';
+import Me from '../assets/myPic.jpg';
 import Linkedin from '../assets/Ln.webp';
 import Freelancer from '../assets/fr.png';
 import ReactJs from '../assets/react.webp';
@@ -15,7 +15,6 @@ import NodeJs from '../assets/node.svg';
 import Figma from '../assets/figma.png';
 import Canva from '../assets/canva.webp';
 import Sass from '../assets/sass.svg';
-import jQuery from '../assets/jquery.png';
 import Express from '../assets/express.png';
 import Git from '../assets/git-bash.svg';
 import GitHub from '../assets/github.svg';
@@ -24,7 +23,6 @@ import TailwindCSS from '../assets/ts.avif';
 import Python from '../assets/python.png';
 import PHP from '../assets/php.png';
 import MongoDB from '../assets/mdb.png';
-import PostgreSQL from '../assets/pgs.png';
 import MySQL from '../assets/mySql.png';
 import Insta from '../assets/in.webp';
 import Chat1 from '../assets/chat1.png';
@@ -111,8 +109,8 @@ const Portfolio = () => {
         <div className={activeSection === 'skill' ? 'text-red-600 border-b-2 border-red-600' : 'cursor-pointer'}
             onClick={() => document.getElementById('skill').scrollIntoView({ behavior: 'smooth' })}
         >Skill</div>
-        <div className={activeSection === 'contact' ? 'text-red-600 border-b-2 border-red-600' : 'cursor-pointer'}
-            onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+        <div className={activeSection === 'resume' ? 'text-red-600 border-b-2 border-red-600' : 'cursor-pointer'}
+            onClick={() => document.getElementById('resume').scrollIntoView({ behavior: 'smooth' })}
         >Resume</div>
       </div>
 
@@ -143,7 +141,7 @@ const Portfolio = () => {
              <a href="https://github.com/lovely1211/" target="_blank" rel="noopener noreferrer" className='cursor-pointer'>
                <img src={GitHub} alt="Github" className='bg-white mx-2 border-4 border-red-600 rounded-full w-16'/>
              </a>
-             <a href="https://www.instagram.com/soulful_dreamer1211/" target="_blank" rel="noopener noreferrer">
+             <a href="https://www.instagram.com/forpersonal01/" target="_blank" rel="noopener noreferrer">
                <img src={Insta} alt="Instagram" className='mx-2 bg-white border-4 border-red-600 rounded-full w-16'/>
              </a>
              <a href="https://www.freelancer.in/u/lovely1211zmn" target="_blank" rel="noopener noreferrer">
@@ -174,6 +172,10 @@ const Portfolio = () => {
                   controls    
                   muted    
                 />
+                <p>Deployed on Render: 
+                  <a href="https://goodfoodfront.onrender.com"
+                  className="underline hover:no-underline text-sm"> GoodFood</a>
+                </p>
             </div>
 
             <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/GoodFood', '_blank')}>
@@ -294,8 +296,6 @@ const Portfolio = () => {
             <p>
             <img className='w-20 rounded-lg' src={MySQL} alt=''/>MySQL</p>
             <p>
-            <img className='w-20 rounded-lg' src={PostgreSQL} alt=''/>PostgreSQL</p>
-            <p>
             <img className='w-20 rounded-lg' src={Git} alt=''/>Git</p>
             <p>
             <img className='w-20 rounded-lg bg-white' src={GitHub} alt=''/>GitHub</p>
@@ -312,8 +312,6 @@ const Portfolio = () => {
             <p>
             <img className='w-20 rounded-lg' src={Figma} alt=''/>Figma</p>
             <p>
-            <img className='w-20 rounded-lg' src={jQuery} alt=''/>jQuery</p>
-            <p>
             <img className='w-20 rounded-lg bg-white' src={Sass} alt=''/>Sass</p>
             </div>
           </div>
@@ -323,7 +321,7 @@ const Portfolio = () => {
           <div>
             <h2 className='text-4xl font-bold my-8'>Resume</h2>
             <div className='w-full '>
-              <embed src="https://lovely1211.github.io/Portfolio/Lovely_Singh.pdf" type="application/pdf" width="100%" height="460px" />
+              <embed src="https://lovely1211.github.io/Portfolio/Resume.pdf" type="application/pdf" width="100%" height="460px" />
             </div>
           </div>
         </section>
