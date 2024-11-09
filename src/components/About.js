@@ -6,7 +6,6 @@ import './About.css';
 // images
 import Me from '../assets/myPic.jpg';
 import Linkedin from '../assets/Ln.webp';
-import Freelancer from '../assets/fr.png';
 import ReactJs from '../assets/react.webp';
 import HTML from '../assets/Html.webp';
 import CSS from '../assets/css.png';
@@ -39,6 +38,9 @@ import Topper from '../assets/top.png';
 import Exp from '../assets/Exp.png';
 import FoodFront from '../assets/buyer.mp4';
 import FoodBack from '../assets/seller.mp4';
+import Bloggify from '../assets/Blog.mp4';
+import Extension from '../assets/Extension.mp4';
+
 
 
 const Portfolio = () => {
@@ -144,9 +146,6 @@ const Portfolio = () => {
              <a href="https://www.instagram.com/forpersonal01/" target="_blank" rel="noopener noreferrer">
                <img src={Insta} alt="Instagram" className='mx-2 bg-white border-4 border-red-600 rounded-full w-16'/>
              </a>
-             <a href="https://www.freelancer.in/u/lovely1211zmn" target="_blank" rel="noopener noreferrer">
-               <img src={Freelancer} alt="Freelancer" className='mx-2 border-4 border-red-600 rounded-full w-16'/>
-             </a>
           </div>
 
         <h2 className='text-4xl font-bold'>Projects</h2>
@@ -188,6 +187,16 @@ const Portfolio = () => {
                 />
             </div>
 
+            <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/My-Blog', '_blank')}>
+                <video 
+                  className="w-full cursor-pointer" 
+                  src={Bloggify}  
+                  alt="Project 00"
+                  controls    
+                  muted    
+                />
+            </div>
+
               <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/My-Chat-App', '_blank')}>
                 <img className="carousel-img cursor-pointer" src={Chat1} alt="Project 2" />
 
@@ -210,6 +219,16 @@ const Portfolio = () => {
 
               <div onClick={() => window.open('https://github.com/My-Chat-App', '_blank')}>
                 <img className="carousel-img cursor-pointer" src={Chat4} alt="Project 2" />
+              </div>
+
+              <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/Linkedin_AI_Reply', '_blank')}>
+                <video 
+                  className="w-full cursor-pointer" 
+                  src={Extension}  
+                  alt="Project 00"
+                  controls    
+                  muted    
+                />
               </div>
               
               <div className='relative inline-block'>
@@ -335,3 +354,5 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+// npm run build,  npm run deploy
