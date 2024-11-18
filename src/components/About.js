@@ -32,7 +32,8 @@ import Landing from '../assets/lan.png';
 import Dashboard from '../assets/db.png';
 import LinkedinClone from '../assets/linkedin.png';
 import Amazon from '../assets/Amazon Clone.png';
-import InnerGlow from '../assets/InnerGlow.png';
+import InnerGlow from '../assets/Inner-Glow.mp4';
+import Inner_glow_img from '../assets/InnerGlow.png'
 import YouTube from '../assets/YT.png';
 import Topper from '../assets/top.png';
 import Exp from '../assets/Exp.png';
@@ -155,20 +156,24 @@ const Portfolio = () => {
             <Slider {...sliderSettings}>
 
             <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/InnerGlow', '_blank')}>
-                <img className="carousel-img cursor-pointer" src={InnerGlow} alt="Project 2" />
-
-                <div className="absolute bottom-0 w-full bg-red-950 bg-opacity-50 text-yellow-500 font-bold text-center p-3">
-                  <p className="text-lg">InnerGlow is a mental health and wellness platform designed to help individuals achieve inner peace and emotional balance.</p>
+                <video 
+                  className="w-full cursor-pointer" 
+                  src={InnerGlow}  
+                  alt="Project 0"
+                  controls   
+                  muted  
+                  poster={Inner_glow_img}  
+                />
+                  <p className="text-lg">InnerGlow is a mental health platform to help individuals achieve inner peace and emotional balance.</p>
                   <a href="https://github.com/lovely1211/InnerGlow"           className="underline hover:no-underline text-sm">GitHub</a>
-                </div>
-              </div>
+            </div>
 
             <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/GoodFood', '_blank')}>
                 <video 
                   className="w-full cursor-pointer" 
                   src={FoodFront}  
                   alt="Project 0"
-                  controls    
+                  autoPlay    
                   muted    
                 />
                 <p>Deployed on Render: 
@@ -182,7 +187,7 @@ const Portfolio = () => {
                   className="w-full cursor-pointer" 
                   src={FoodBack}  
                   alt="Project 0"
-                  controls    
+                  autoPlay    
                   muted    
                 />
             </div>
@@ -192,9 +197,11 @@ const Portfolio = () => {
                   className="w-full cursor-pointer" 
                   src={Bloggify}  
                   alt="Project 00"
-                  controls    
+                  autoPlay    
                   muted    
                 />
+                <p className="text-lg">Visit on GitHub:</p>
+                  <a href="https://github.com/lovely1211/My-Blog"           className="underline hover:no-underline text-sm">GitHub</a>
             </div>
 
               <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/My-Chat-App', '_blank')}>
