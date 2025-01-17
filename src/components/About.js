@@ -127,9 +127,11 @@ const Portfolio = () => {
             <div className='h-1/2 w-1/2'>
               <h1 className='text-5xl font-bold'>Hello, I'm <span className=' text-red-600'>Lovely Singh</span></h1>
               <h2 className='text-4xl font-bold'>Full Stack Developer</h2>
-              <p>I'm a passionate software engineer currently developing an exciting project called Inner Glow.</p>
+              <p>I'm a passionate MERN-Stack Developer currently developing an exciting project called Inner Glow.</p>
               <p>
-              I was awarded a scholarship for securing 1st place in my college and recognized as a top performer during my two-month internship, where I developed high-impact projects. I excel in designing and building scalable web applications using modern technologies, with a strong understanding of databases, programming languages, and APIs.
+              And enhancing Backend and Data Structures & Algorithms (DSA) problem-solving skills, actively practicing on LeetCode & GeeksforGeeks to strengthen logic-building abilities.
+              I was awarded a scholarship for securing 1st place in my college and recognized as a top performer during my two-month internship, where I developed high-impact projects. I Always
+              eager to explore new technologies like AWS, Docker, and GraphQL to enhance development workflows.
               </p>
               <p>I thrive on solving complex technical challenges and delivering efficient solutions, always eager to learn and take on new challenges.</p>
               <p>Connect with me:  lovely1211zmn@gmail.com</p>
