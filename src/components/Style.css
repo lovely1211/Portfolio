@@ -1,25 +1,26 @@
 /* General adjustments for better carousel layout */
+/*-------------------- About page css ---------------- */
 .slick-slide {
   display: flex !important;
   justify-content: center;
   align-items: center;
-  height: 500px; /* Adjust this if you want different heights */
+  height: 500px; 
   max-width: 100%;
-  overflow: hidden; /* Ensure no overflow */
+  overflow: hidden; 
 }
 
 .slick-slide img {
-  max-width: 100%; /* To prevent it from going beyond container */
+  max-width: 100%; 
   height: auto;
-  object-fit: cover; /* Ensures the images scale properly without stretching */
+  object-fit: cover; 
 }
 
 /* Carousel container adjustments */
 #project .slick-slider {
-  width: 80%; /* You can change this to control the width of the carousel */
-  margin: 0 auto; /* Center the carousel */
+  width: 80%; 
+  margin: 0 auto; 
   position: relative;
-  z-index: 2; /* Ensure it's above the bubble background */
+  z-index: 2; 
 }
 
 #about, #skill, #resume, #social{
@@ -43,7 +44,7 @@
   background-color: rgba(255, 255, 255, 0.6);
   opacity: 0.8;
   animation: bubble-animation 7s infinite linear;
-  bottom: -50px; /* To ensure they start from the bottom */
+  bottom: -50px; 
 }
 
 @keyframes bubble-animation {
@@ -53,4 +54,26 @@
   100% {
     transform: translateY(-100vh) scale(1.2);
   }
+}
+
+
+/*------------------- Journey page css ---------------------*/
+.car {
+  
+  transform: translateY(-50%);
+  transition: all 0.5s ease;
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.milestone-details {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  text-align: left;
 }

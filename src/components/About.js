@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Slider from "react-slick"; 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import './About.css';
+import './Style.css';
 // images
 import Me from '../assets/myPic.jpg';
 import Linkedin from '../assets/Ln.webp';
@@ -19,8 +19,9 @@ import Git from '../assets/git-bash.svg';
 import GitHub from '../assets/github.svg';
 import Boostrap from '../assets/bts.png';
 import TailwindCSS from '../assets/ts.avif';
-import Python from '../assets/python.png';
-import PHP from '../assets/php.png';
+import GraphQL from '../assets/graphql.png';
+import Docker from '../assets/docker.jpg';
+import AWS from '../assets/aws.png';
 import MongoDB from '../assets/mdb.png';
 import MySQL from '../assets/mySql.png';
 import Insta from '../assets/in.webp';
@@ -109,12 +110,19 @@ const Portfolio = () => {
         <div className={activeSection === 'project' ? 'text-red-600 border-b-2 border-red-600' : 'cursor-pointer'}
             onClick={() => document.getElementById('project').scrollIntoView({ behavior: 'smooth' })}
         >Project</div>
+        
         <div className={activeSection === 'skill' ? 'text-red-600 border-b-2 border-red-600' : 'cursor-pointer'}
             onClick={() => document.getElementById('skill').scrollIntoView({ behavior: 'smooth' })}
         >Skill</div>
+
         <div className={activeSection === 'resume' ? 'text-red-600 border-b-2 border-red-600' : 'cursor-pointer'}
             onClick={() => document.getElementById('resume').scrollIntoView({ behavior: 'smooth' })}
         >Resume</div>
+
+        {/* <div className={activeSection === 'journey' ? 'text-red-600 border-b-2 border-red-600' : 'cursor-pointer'}
+            onClick={() => document.getElementById('journey').scrollIntoView({ behavior: 'smooth' })}
+        >Journey</div> */}
+
       </div>
 
       {/* Scrollable Content */}
@@ -126,14 +134,13 @@ const Portfolio = () => {
             </div>
             <div className='h-1/2 w-1/2'>
               <h1 className='text-5xl font-bold'>Hello, I'm <span className=' text-red-600'>Lovely Singh</span></h1>
-              <h2 className='text-4xl font-bold'>Full Stack Developer</h2>
-              <p>I'm a passionate MERN-Stack Developer currently developing an exciting project called Inner Glow.</p>
+              <h2 className='text-4xl font-bold'>MERN-Stack Developer</h2>
+              <br/>
+              <p>I'm a Passionate MERN Stack Developer with  hands-on experience in building scalable and optimized web applications.</p>
               <p>
-              And enhancing Backend and Data Structures & Algorithms (DSA) problem-solving skills, actively practicing on LeetCode & GeeksforGeeks to strengthen logic-building abilities.
-              I was awarded a scholarship for securing 1st place in my college and recognized as a top performer during my two-month internship, where I developed high-impact projects. I Always
-              eager to explore new technologies like AWS, Docker, and GraphQL to enhance development workflows.
+              Currently enhancing Backend skills and Data Structures & Algorithms (DSA) problem-solving skills, actively practicing on LeetCode & GeeksforGeeks to strengthen logic-building abilities. Recognized as a Top Performer during an internship for delivering high-impact projects and awarded a scholarship for academic excellence.
               </p>
-              <p>I thrive on solving complex technical challenges and delivering efficient solutions, always eager to learn and take on new challenges.</p>
+              <p>I thrive on solving complex technical challenges and delivering efficient solutions, always eager to learn, grow and take on new challenges.</p><br/>
               <p>Connect with me:  lovely1211zmn@gmail.com</p>
             </div>
           </div>
@@ -318,15 +325,15 @@ const Portfolio = () => {
             <p>
             <img className='w-20 rounded-lg' src={JavaScript} alt=''/>JavaScript</p>
             <p>
-            <img className='w-20 rounded-lg' src={Python} alt=''/>Python</p>
-            <p>
-            <img className='w-20 rounded-lg' src={PHP} alt=''/>PHP</p>
-            <p>
             <img className='w-20 rounded-lg' src={MySQL} alt=''/>MySQL</p>
             <p>
             <img className='w-20 rounded-lg' src={Git} alt=''/>Git</p>
             <p>
             <img className='w-20 rounded-lg bg-white' src={GitHub} alt=''/>GitHub</p>
+            <p>
+            <img className='w-20 rounded-lg bg-white' src={GraphQL} alt=''/>GraphQL</p><p>
+            <img className='w-20 rounded-lg bg-white' src={Docker} alt=''/>Docker</p><p>
+            <img className='w-20 rounded-lg bg-white' src={AWS} alt=''/>AWS</p>
             <p>
             <img className='w-20 rounded-lg bg-white' src={HTML} alt=''/>HTML</p>
             <p>
