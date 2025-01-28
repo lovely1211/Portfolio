@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import './Style.css';
+import Journey from './Journey';
 // images
 import Me from '../assets/myPic.jpg';
 import Linkedin from '../assets/Ln.webp';
@@ -104,9 +105,11 @@ const Portfolio = () => {
     <div className='bg-black text-white'>
       {/* Fixed Header */}
       <div className='fixed top-0 left-0 w-full flex flex-row justify-evenly p-5 text-xl font-bold border-b-2 bg-black z-10'>
+
         <div className={activeSection === 'about' ? 'text-red-600 border-b-2 border-red-600' : 'cursor-pointer'}
             onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
         >About</div>
+
         <div className={activeSection === 'project' ? 'text-red-600 border-b-2 border-red-600' : 'cursor-pointer'}
             onClick={() => document.getElementById('project').scrollIntoView({ behavior: 'smooth' })}
         >Project</div>
@@ -119,9 +122,9 @@ const Portfolio = () => {
             onClick={() => document.getElementById('resume').scrollIntoView({ behavior: 'smooth' })}
         >Resume</div>
 
-        {/* <div className={activeSection === 'journey' ? 'text-red-600 border-b-2 border-red-600' : 'cursor-pointer'}
+        <div className={activeSection === 'journey' ? 'text-red-600 border-b-2 border-red-600' : 'cursor-pointer'}
             onClick={() => document.getElementById('journey').scrollIntoView({ behavior: 'smooth' })}
-        >Journey</div> */}
+        >Journey</div>
 
       </div>
 
@@ -169,7 +172,7 @@ const Portfolio = () => {
                   className="w-full cursor-pointer" 
                   src={InnerGlow}  
                   alt="Project 0"
-                  controls   
+                  autoPlay   
                   muted  
                   poster={Inner_glow_img}  
                 />
@@ -359,6 +362,10 @@ const Portfolio = () => {
               <embed src="https://lovely1211.github.io/Portfolio/Resume.pdf" type="application/pdf" width="100%" height="460px" />
             </div>
           </div>
+        </section>
+
+        <section id="journey" className="min-h-screen flex items-center justify-center">
+          <Journey />
         </section>
 
       </div>
