@@ -42,6 +42,7 @@ import Exp from '../assets/Exp.png';
 import FoodFront from '../assets/buyer.mp4';
 import FoodBack from '../assets/seller.mp4';
 import Bloggify from '../assets/Blog.mp4';
+import Webcam from '../assets/Webcam.mp4';
 import Extension from '../assets/Extension.mp4';
 
 
@@ -204,6 +205,18 @@ const Portfolio = () => {
                 />
             </div>
 
+            <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/Webcam', '_blank')}>
+                <video 
+                  className="w-full cursor-pointer" 
+                  src={Webcam}  
+                  alt="Project 00"
+                  autoPlay    
+                  muted    
+                />
+                <p className="text-lg">Visit on GitHub:</p>
+                  <a href="https://github.com/lovely1211/Webcam"           className="underline hover:no-underline text-sm">Webcam</a>
+            </div>
+
             <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/My-Blog', '_blank')}>
                 <video 
                   className="w-full cursor-pointer" 
@@ -213,7 +226,7 @@ const Portfolio = () => {
                   muted    
                 />
                 <p className="text-lg">Visit on GitHub:</p>
-                  <a href="https://github.com/lovely1211/My-Blog"           className="underline hover:no-underline text-sm">GitHub</a>
+                  <a href="https://github.com/lovely1211/My-Blog"           className="underline hover:no-underline text-sm">Blogify</a>
             </div>
 
               <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/My-Chat-App', '_blank')}>
