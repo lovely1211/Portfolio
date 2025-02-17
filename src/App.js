@@ -1,4 +1,3 @@
-import './App.css';
 import Portfolio from './components/About';
 
 function App() {

@@ -130,37 +130,40 @@ const Portfolio = () => {
       </div>
 
       {/* Scrollable Content */}
-      <div className=''> 
-        <section id="about" className='min-h-screen flex items-center justify-center'>
-          <div className='flex flex-row justify-evenly items-center'>
-            <div>
-              <img className='rounded-full h-96 w-full object-cover' src={Me} alt='img'/>
-            </div>
-            <div className='h-1/2 w-1/2'>
-              <h1 className='text-5xl font-bold'>Hello, I'm <span className=' text-red-600'>Lovely Singh</span></h1>
-              <h2 className='text-4xl font-bold'>MERN-Stack Developer</h2>
-              <br/>
-              <p>I'm a Passionate MERN Stack Developer with  hands-on experience in building scalable and optimized web applications.</p>
-              <p>
-              Currently enhancing Backend skills and Data Structures & Algorithms (DSA) problem-solving skills, actively practicing on LeetCode & GeeksforGeeks to strengthen logic-building abilities. Recognized as a Top Performer during an internship for delivering high-impact projects and awarded a scholarship for academic excellence.
-              </p>
-              <p>I thrive on solving complex technical challenges and delivering efficient solutions, always eager to learn, grow and take on new challenges.</p><br/>
-              <p>Connect with me:  lovely1211zmn@gmail.com</p>
-            </div>
-          </div>
-        </section>
+      <div className='text-center'>
+      <section id="about" className="min-h-screen flex items-center justify-center py-8">
+  <div className="flex flex-col lg:flex-row justify-evenly items-center w-full px-4">
+    <div className="flex justify-center mb-8 lg:mb-0">
+      <img className="rounded-full h-96 w-96 object-cover" src={Me} alt="img" />
+    </div>
+    <div className="text-center lg:text-left lg:w-1/2 px-4">
+      <h1 className="text-5xl font-bold mb-4">Hello, I'm <span className="text-red-600">Lovely Singh</span></h1>
+      <h2 className="text-4xl font-bold mb-4">MERN-Stack Developer</h2>
+      <p className="mb-4">
+        I'm a passionate MERN Stack Developer with hands-on experience in building scalable and optimized web applications.
+      </p>
+      <p className="mb-4">
+        Currently enhancing Backend skills and Data Structures & Algorithms (DSA) problem-solving skills, actively practicing on LeetCode & GeeksforGeeks to strengthen logic-building abilities. Recognized as a Top Performer during an internship for delivering high-impact projects and awarded a scholarship for academic excellence.
+      </p>
+      <p className="mb-4">
+        I thrive on solving complex technical challenges and delivering efficient solutions, always eager to learn, grow, and take on new challenges.
+      </p>
+      <p>Connect with me: <a href="mailto:lovely1211zmn@gmail.com" className="text-blue-500">lovely1211zmn@gmail.com</a></p>
+    </div>
+  </div>
+</section>
 
-          <div id='social' className='-mt-28 flex flex-row text-center mb-10 justify-center items-center'>
-             <a href="https://www.linkedin.com/in/lovely-singh-612aa4293/" target="_blank" rel="noopener noreferrer">
-               <img src={Linkedin} alt="LinkedIn" className='rounded-full mx-2 w-16 border-4 border-red-600'/>
-             </a>
-             <a href="https://github.com/lovely1211/" target="_blank" rel="noopener noreferrer" className='cursor-pointer'>
-               <img src={GitHub} alt="Github" className='bg-white mx-2 border-4 border-red-600 rounded-full w-16'/>
-             </a>
-             <a href="https://www.instagram.com/forpersonal01/" target="_blank" rel="noopener noreferrer">
-               <img src={Insta} alt="Instagram" className='mx-2 bg-white border-4 border-red-600 rounded-full w-16'/>
-             </a>
-          </div>
+<div id="social" className="flex flex-row text-center mb-10 justify-center items-center space-x-4">
+  <a href="https://www.linkedin.com/in/lovely-singh-612aa4293/" target="_blank" rel="noopener noreferrer">
+    <img src={Linkedin} alt="LinkedIn" className="rounded-full mx-2 w-16 border-4 border-red-600 transition-transform transform hover:scale-110" />
+  </a>
+  <a href="https://github.com/lovely1211/" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+    <img src={GitHub} alt="Github" className="bg-white mx-2 border-4 border-red-600 rounded-full w-16 transition-transform transform hover:scale-110" />
+  </a>
+  <a href="https://www.instagram.com/forpersonal01/" target="_blank" rel="noopener noreferrer">
+    <img src={Insta} alt="Instagram" className="mx-2 bg-white border-4 border-red-600 rounded-full w-16 transition-transform transform hover:scale-110" />
+  </a>
+</div>
 
         <h2 className='text-4xl font-bold'>Projects</h2>
         <section id="project" className="min-h-screen flex items-center justify-center">
@@ -329,7 +332,7 @@ const Portfolio = () => {
         <section id="skill" className='min-h-screen flex items-center justify-center'>
           <div>
             <h2 className='text-4xl font-bold mb-8'>Skills</h2>
-            <div className='grid grid-cols-5 gap-12'>
+            <div className='grid grid-cols-5 gap-10 px-8'>
             <p>
               <img className='w-20 rounded-lg' src={ReactJs} alt=''/>ReactJs</p>
             <p>
@@ -369,12 +372,17 @@ const Portfolio = () => {
         </section>
 
         <section id="resume" className='min-h-screen flex items-center justify-center'>
-          <div>
-            <h2 className='text-4xl font-bold my-8'>Resume</h2>
-            <div className='w-full '>
-              <embed src="https://lovely1211.github.io/Portfolio/Resume.pdf" type="application/pdf" width="100%" height="460px" />
-            </div>
+        <div>
+          <h2 className='text-4xl font-bold my-8 text-center'>Resume</h2>
+          <div className='w-full'>
+            <embed 
+            src="https://lovely1211.github.io/Portfolio/Resume.pdf" 
+            type="application/pdf" 
+            className='w-full' 
+            style={{ height: '60vh' }}
+            />
           </div>
+        </div>
         </section>
 
         <section id="journey" className="min-h-screen flex items-center justify-center">

@@ -1,38 +1,38 @@
 /* General adjustments for better carousel layout */
-/*-------------------- About page css ---------------- */
 .slick-slide {
   display: flex !important;
   justify-content: center;
   align-items: center;
-  height: 500px; 
+  height: 500px;
   max-width: 100%;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .slick-slide img {
-  max-width: 100%; 
+  max-width: 100%;
   height: auto;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 /* Carousel container adjustments */
 #project .slick-slider {
-  width: 80%; 
-  margin: 0 auto; 
+  width: 80%;
+  margin: 0 auto;
   position: relative;
-  z-index: 2; 
+  z-index: 2;
 }
 
-#about, #skill, #resume, #social{
+#about, #skill, #resume, #social {
   z-index: 2;
   position: relative;
 }
 
-.carousel img{
+.carousel img {
   width: 100%;
   height: auto;
 }
 
+/* Bubble container for animation effect */
 .bubble-container {
   pointer-events: none;
   overflow: hidden;
@@ -44,7 +44,7 @@
   background-color: rgba(255, 255, 255, 0.6);
   opacity: 0.8;
   animation: bubble-animation 7s infinite linear;
-  bottom: -50px; 
+  bottom: -50px;
 }
 
 @keyframes bubble-animation {
@@ -57,10 +57,62 @@
 }
 
 @keyframes moveLines {
-  0% { transform: translateY(-100%); }
-  100% { transform: translateY(100%); }
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
 }
 
 .animate-moveLines {
   animation: moveLines 2s linear infinite;
+}
+
+/* Media Queries for responsiveness */
+
+/* For small devices like phones */
+@media (max-width: 767px) {
+  .slick-slide {
+    height: 300px; /* Reduced height for smaller screens */
+  }
+
+  #project .slick-slider {
+    width: 95%; /* Make carousel container wider on smaller screens */
+  }
+
+  /* Make sure text and links inside the carousel are responsive */
+  .slick-slide p {
+    font-size: 14px; /* Adjust text size for small screens */
+  }
+
+  .carousel-container {
+    padding: 0 10px; /* Ensure padding around carousel */
+  }
+}
+
+/* For medium devices like tablets */
+@media (max-width: 1024px) {
+  .slick-slide {
+    height: 400px; /* Slightly reduced height for tablets */
+  }
+
+  #project .slick-slider {
+    width: 90%; /* Adjust width to fit medium-sized screens */
+  }
+
+  .carousel-container {
+    padding: 0 20px; /* Add some padding for better spacing */
+  }
+}
+
+/* For larger screens (desktops) */
+@media (min-width: 1025px) {
+  .slick-slide {
+    height: 500px; /* Original height for larger screens */
+  }
+
+  #project .slick-slider {
+    width: 80%; /* Original width for larger screens */
+  }
 }
