@@ -48,7 +48,7 @@ import Bloggify from '../assets/Blog.mp4';
 import Webcam from '../assets/Webcam.mp4';
 import Extension from '../assets/Extension.mp4';
 import AgentSync from '../assets/AgentSync.mp4';
-// import Youtube-mini-app from '../assets/youtube-mini-app.mp4';
+import YoutubeMiniApp from '../assets/youtube-mini-app.png';
 
 
 
@@ -137,26 +137,26 @@ const Portfolio = () => {
       {/* Scrollable Content */}
       <div className='text-center'>
       <section id="about" className="min-h-screen flex items-center justify-center py-8">
-  <div className="flex flex-col lg:flex-row justify-evenly items-center w-full px-4">
-    <div className="flex justify-center mb-8 lg:mb-0">
-      <img className="rounded-full h-96 w-96 object-cover" src={Me} alt="img" />
-    </div>
-    <div className="text-center lg:text-left lg:w-1/2 px-4">
-      <h1 className="text-5xl font-bold mb-4">Hello, I'm <span className="text-red-600">Lovely Singh</span></h1>
-      <h2 className="text-4xl font-bold mb-4">MERN-Stack Developer</h2>
-      <p className="mb-4">
-        I'm a passionate MERN Stack Developer with hands-on experience in building scalable and optimized web applications. I love coding, enjoy solving problems and work on backend side.
-      </p>
-      <p className="mb-4">
-        Currently enhancing Backend skills and DevOps and Cloud Computing Skilled in React.js, Node.js, MongoDB, REST APIs, and APIs. Recognized as a Top Performer during an internship for delivering high-impact projects and awarded a scholarship for academic excellence.
-      </p>
-      <p className="mb-4">
-        I thrive on solving complex technical challenges and delivering efficient solutions, always eager to learn, grow, and take on new challenges.
-      </p>
-      <p>Connect with me: <a href="mailto:lovely1211zmn@gmail.com" className="text-blue-500">lovely1211zmn@gmail.com</a></p>
-    </div>
-  </div>
-</section>
+        <div className="flex flex-col lg:flex-row justify-evenly items-center w-full px-4">
+          <div className="flex justify-center mb-8 lg:mb-0">
+            <img className="rounded-full h-96 w-96 object-cover" src={Me} alt="img" />
+          </div>
+          <div className="text-center lg:text-left lg:w-1/2 px-4">
+            <h1 className="text-5xl font-bold mb-4">Hello, I'm <span       className="text-red-600">Lovely Singh</span></h1>
+            <h2 className="text-4xl font-bold mb-4">MERN-Stack Developer</h2>
+            <p className="mb-4">
+              I'm a passionate MERN Stack Developer with hands-on experience in building scalable and optimized web applications. I love coding, enjoy solving problems and work on backend side.
+            </p>
+            <p className="mb-4">
+              Currently enhancing Backend skills and DevOps and Cloud Computing Skilled in React.js, Node.js, MongoDB, REST APIs, and APIs. Recognized as a Top Performer during an internship for delivering high-impact projects and awarded a scholarship for academic excellence.
+            </p>
+            <p className="mb-4">
+              I thrive on solving complex technical challenges and delivering efficient solutions, always eager to learn, grow, and take on new challenges.
+            </p>
+            <p>Connect with me: <a href="mailto:lovely1211zmn@gmail.com" className="text-blue-500">lovely1211zmn@gmail.com</a></p>
+          </div>
+        </div>
+      </section>
 
 <div id="social" className="flex flex-row text-center mb-10 justify-center items-center space-x-4">
   <a href="https://www.linkedin.com/in/lovely-singh-612aa4293/" target="_blank" rel="noopener noreferrer">
@@ -176,18 +176,16 @@ const Portfolio = () => {
             <div className="carousel-container w-4/5"> 
             <Slider {...sliderSettings}>
 
-            {/* <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/youtube-mini-app-frontend', '_blank')}>
-                <video 
+            <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/youtube-mini-app-frontend', '_blank')}>
+                <img 
                   className="w-full cursor-pointer" 
-                  src={Youtube-mini-app}  
-                  alt="Project 0"
-                  autoPlay   
-                  muted   
+                  src={YoutubeMiniApp}  
+                  alt="Project 0" 
                 />
                   <p className="text-lg">The application supports Google authentication and allows users to interact with their uploaded YouTube videos.</p>
                   <a href="https://youtube-mini-app-frontend.vercel.app/auth"           
                   className="underline hover:no-underline text-sm">Deployed on Vercel</a>
-            </div> */}
+            </div>
             
             <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/agent-sync', '_blank')}>
                 <video 
@@ -197,8 +195,9 @@ const Portfolio = () => {
                   autoPlay   
                   muted 
                 />
-                  <p className="text-lg">This project is a MERN_STack based dashboard application with authentication, CSV file upload functionality, and user role management.</p>
+                  <p className="text-lg">This project is a MERN-Stack based dashboard application with auth, CSV file upload functionality, and user role management .
                   <a href="https://github.com/lovely1211/agent-sync"           className="underline hover:no-underline text-sm">GitHub</a>
+                  </p>
             </div>
 
             <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/InnerGlow', '_blank')}>
@@ -222,7 +221,7 @@ const Portfolio = () => {
                   autoPlay    
                   muted    
                 />
-                <p>Deployed on Vercel: 
+                <p>Deployed on Vercel : 
                   <a href="https://good-food-frontend.vercel.app/auth"
                   className="underline hover:no-underline text-sm">GoodFood</a>
                 </p>
