@@ -39,11 +39,16 @@ import Inner_glow_img from '../assets/InnerGlow.png'
 import YouTube from '../assets/YT.png';
 import Topper from '../assets/top.png';
 import Exp from '../assets/Exp.png';
+import gcp from '../assets/gcp.png';
+import render from '../assets/render.png';
+import vercel from '../assets/vercel.png';
 import FoodFront from '../assets/buyer.mp4';
 import FoodBack from '../assets/seller.mp4';
 import Bloggify from '../assets/Blog.mp4';
 import Webcam from '../assets/Webcam.mp4';
 import Extension from '../assets/Extension.mp4';
+import AgentSync from '../assets/AgentSync.mp4';
+// import Youtube-mini-app from '../assets/youtube-mini-app.mp4';
 
 
 
@@ -140,10 +145,10 @@ const Portfolio = () => {
       <h1 className="text-5xl font-bold mb-4">Hello, I'm <span className="text-red-600">Lovely Singh</span></h1>
       <h2 className="text-4xl font-bold mb-4">MERN-Stack Developer</h2>
       <p className="mb-4">
-        I'm a passionate MERN Stack Developer with hands-on experience in building scalable and optimized web applications.
+        I'm a passionate MERN Stack Developer with hands-on experience in building scalable and optimized web applications. I love coding, enjoy solving problems and work on backend side.
       </p>
       <p className="mb-4">
-        Currently enhancing Backend skills and Data Structures & Algorithms (DSA) problem-solving skills, actively practicing on LeetCode & GeeksforGeeks to strengthen logic-building abilities. Recognized as a Top Performer during an internship for delivering high-impact projects and awarded a scholarship for academic excellence.
+        Currently enhancing Backend skills and DevOps and Cloud Computing Skilled in React.js, Node.js, MongoDB, REST APIs, and APIs. Recognized as a Top Performer during an internship for delivering high-impact projects and awarded a scholarship for academic excellence.
       </p>
       <p className="mb-4">
         I thrive on solving complex technical challenges and delivering efficient solutions, always eager to learn, grow, and take on new challenges.
@@ -171,6 +176,31 @@ const Portfolio = () => {
             <div className="carousel-container w-4/5"> 
             <Slider {...sliderSettings}>
 
+            {/* <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/youtube-mini-app-frontend', '_blank')}>
+                <video 
+                  className="w-full cursor-pointer" 
+                  src={Youtube-mini-app}  
+                  alt="Project 0"
+                  autoPlay   
+                  muted   
+                />
+                  <p className="text-lg">The application supports Google authentication and allows users to interact with their uploaded YouTube videos.</p>
+                  <a href="https://youtube-mini-app-frontend.vercel.app/auth"           
+                  className="underline hover:no-underline text-sm">Deployed on Vercel</a>
+            </div> */}
+            
+            <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/agent-sync', '_blank')}>
+                <video 
+                  className="w-full cursor-pointer" 
+                  src={AgentSync}  
+                  alt="Project 0"
+                  autoPlay   
+                  muted 
+                />
+                  <p className="text-lg">This project is a MERN_STack based dashboard application with authentication, CSV file upload functionality, and user role management.</p>
+                  <a href="https://github.com/lovely1211/agent-sync"           className="underline hover:no-underline text-sm">GitHub</a>
+            </div>
+
             <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/InnerGlow', '_blank')}>
                 <video 
                   className="w-full cursor-pointer" 
@@ -192,9 +222,9 @@ const Portfolio = () => {
                   autoPlay    
                   muted    
                 />
-                <p>Deployed on Render: 
-                  <a href="https://goodfoodfront.onrender.com"
-                  className="underline hover:no-underline text-sm"> GoodFood</a>
+                <p>Deployed on Vercel: 
+                  <a href="https://good-food-frontend.vercel.app/auth"
+                  className="underline hover:no-underline text-sm">GoodFood</a>
                 </p>
             </div>
 
@@ -228,8 +258,9 @@ const Portfolio = () => {
                   autoPlay    
                   muted    
                 />
-                <p className="text-lg">Visit on GitHub:</p>
-                  <a href="https://github.com/lovely1211/My-Blog"           className="underline hover:no-underline text-sm">Blogify</a>
+                <p className="text-lg">Deploy on vercel:</p>
+                  <a href="https://my-blog-front-five.vercel.app/login"           
+                  className="underline hover:no-underline text-sm">Blogify</a>
             </div>
 
               <div className='relative inline-block' onClick={() => window.open('https://github.com/lovely1211/My-Chat-App', '_blank')}>
@@ -343,6 +374,10 @@ const Portfolio = () => {
             <img className='w-20 rounded-lg' src={Express} alt=''/>ExpressJs</p>
             <p>
             <img className='w-20 rounded-lg' src={JavaScript} alt=''/>JavaScript</p>
+            <p>
+            <img className='w-20 rounded-lg' src={gcp} alt=''/>GCP</p> <p>
+            <img className='w-20 rounded-lg bg-white' src={render} alt=''/>Render</p> <p>
+            <img className='w-20 rounded-lg bg-white' src={vercel} alt=''/>Vercel</p>
             <p>
             <img className='w-20 rounded-lg' src={MySQL} alt=''/>MySQL</p>
             <p>
