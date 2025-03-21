@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.cc67fc74.css",
-    "main.js": "/Portfolio/static/js/main.c34e8cfa.js",
+    "main.js": "/Portfolio/static/js/main.217221d4.js",
     "static/js/453.ace21015.chunk.js": "/Portfolio/static/js/453.ace21015.chunk.js",
     "static/media/seller.mp4": "/Portfolio/static/media/seller.e620220a99b604447b52.mp4",
     "static/media/Blog.mp4": "/Portfolio/static/media/Blog.60d1125f4f2747479d60.mp4",
@@ -20,6 +20,7 @@
     "static/media/Exp.png": "/Portfolio/static/media/Exp.58fedbfee1c77a32e587.png",
     "static/media/chat2.png": "/Portfolio/static/media/chat2.b70cb002c51769012194.png",
     "static/media/canva.webp": "/Portfolio/static/media/canva.1c6655c1a21028e27b06.webp",
+    "static/media/youtube-mini-app.png": "/Portfolio/static/media/youtube-mini-app.df32f74a323cf58b5750.png",
     "static/media/db.png": "/Portfolio/static/media/db.080ad799f7529de42d3f.png",
     "static/media/chat3.png": "/Portfolio/static/media/chat3.93d3140956ad6b60923e.png",
     "static/media/InnerGlow.png": "/Portfolio/static/media/InnerGlow.7b667f126712ffa2a74f.png",
@@ -41,11 +42,11 @@
     "static/media/git-bash.svg": "/Portfolio/static/media/git-bash.b3f73afb1361d47dd238f8e5e884ff06.svg",
     "index.html": "/Portfolio/index.html",
     "main.cc67fc74.css.map": "/Portfolio/static/css/main.cc67fc74.css.map",
-    "main.c34e8cfa.js.map": "/Portfolio/static/js/main.c34e8cfa.js.map",
+    "main.217221d4.js.map": "/Portfolio/static/js/main.217221d4.js.map",
     "453.ace21015.chunk.js.map": "/Portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cc67fc74.css",
-    "static/js/main.c34e8cfa.js"
+    "static/js/main.217221d4.js"
   ]
 }
